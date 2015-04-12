@@ -40,7 +40,7 @@
     "react-sortable-item": "^1.1.1",
     "style-loader": "^0.10.1",
     "uniflow": "^1.0.1",
-    "uniflow-component": "^1.0.0"
+    "uniflow-component": "^1.0.0",
     "webpack": "^1.7.3",
     "webpack-dev-server": "^1.8.0",
     "xhr-interceptor": "^1.2.1"
