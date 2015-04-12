@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  font-size: 0.85rem;
+}
+
+.ReactSettingsButton {
+  display: inline-block;
+}
+
+.ReactSettingsButton-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.ModuleItem {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  vertical-align: middle;
+  padding: 4px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ModuleItem--dragging {
+  opacity: 0;
+}
+
+.ModuleItem__title {
+  -webkit-box-flex: 8; -moz-box-flex: 8; box-flex: 8; -ms-flex: 8; -webkit-flex: 8; flex: 8;
+  padding-right: 12px;
+}
+
+.ModuleItem__due-date {
+  -webkit-box-flex: 2; -moz-box-flex: 2; box-flex: 2; -ms-flex: 2; -webkit-flex: 2; flex: 2;
+  font-size: 0.8rem;
+}
+
+.ModuleItem__availability {
+  -webkit-box-flex: 2; -moz-box-flex: 2; box-flex: 2; -ms-flex: 2; -webkit-flex: 2; flex: 2;
+  font-size: 0.8rem;
+}
+
+.ModuleItem__points {
+  font-size: 0.8rem;
+  -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -ms-flex: 1; -webkit-flex: 1; flex: 1;
+}
+
+.ModuleItem__published {
+  width: 32px;
+}
+
+.ModuleItem__admin {
+  width: 32px;
+}

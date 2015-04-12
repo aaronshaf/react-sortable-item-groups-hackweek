@@ -1,0 +1,126 @@
+.ItemGroup {
+  border: 1px solid #D8D8D8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.ItemGroup-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ItemGroup-header {
+  background-color: #F7F7F7;
+  text-transform: capitalize; /* temporary */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ItemGroup-draghandle {
+  width: 9px;
+  height: 18px;
+  display: inline-block;
+  padding: 10px 12px;
+}
+
+
+.ItemGroup-draghandle-svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.ItemGroup__expand-button {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: 0;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  height: 42px;
+}
+
+.ItemGroup__expand-button:focus {
+  -moz-outline: none;
+  outline: none;
+}
+
+.ItemGroup__expand-arrow {
+  display: inline-block;
+  border: 0;
+  padding: 12px;
+  width: 10px;
+  height 10px;
+}
+
+.ItemGroup--expanded .ItemGroup__expand-arrow {
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.ItemGroup--collapsed .ItemGroup__expand-arrow {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.ItemGroup-title {
+  display: inline-block;
+  font-size: 1.03rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -ms-flex: 1; -webkit-flex: 1; flex: 1;
+}
+
+.ItemGroup-itemlist {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* temporarily using cascade here until cloneElement better implemented */
+.ItemGroup-itemlist > li,
+.ItemGroup-item {
+  display: -webkit-flex;
+  display: flex;
+  cursor: -webkit-grab;
+  cursor: grab;
+  background-color: white;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid #D8D8D8;
+  border-bottom: 1px solid #D8D8D8;
+  margin-bottom: -1px;
+  text-transform: capitalize; /* temporary; for example only */
+}
+
+.ItemGroup-itemlist > li:active {
+  cursor: grabbing;
+}
+
+.ItemGroup-itemlist > li.hover.hover-above {
+  border-top: 1px solid black;
+}
+
+.ItemGroup-itemlist > li.hover.hover-below {
+  border-bottom: 1px solid black;
+}
+
+.ItemGroup-itemlist > li.hover.hover-below + li {
+  border-top: 1px solid black;
+}
+
+.ItemGroup-item-content {
+  -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -ms-flex: 1; -webkit-flex: 1; flex: 1;
+  display: -webkit-flex;
+  display: flex;
+}
