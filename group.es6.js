@@ -17,14 +17,14 @@ const ItemGroup = React.createClass({
 
   render() {
     const hasExpandedChildren = this.props.children && this.state.expanded
-    const classes = classSet('ItemGroup', {
+    const classes = classSet('ReactSortableItemGroups__group', {
       'ItemGroup--expanded': this.state.expanded,
       'ItemGroup--collapsed': !this.state.expanded
     })
 
     return (
       <li className={classes}>
-        <div className="ItemGroup-header">
+        <div className="ReactSortableItemGroups__group-header">
           <button className="ItemGroup__expand-button" onClick={this.handleExpandToggle}>
             <span className="ItemGroup__expand-arrow">
               <ArrowDown />

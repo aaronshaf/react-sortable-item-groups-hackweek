@@ -5,7 +5,7 @@ const Groups = React.createClass({
 
   render() {
     return (
-      <ol className="ItemGroup-list">
+      <ol className="ReactSortableItemGroups">
         {this.props.children}
       </ol>
     )

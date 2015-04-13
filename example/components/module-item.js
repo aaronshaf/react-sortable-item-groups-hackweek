@@ -37,11 +37,9 @@ let ModuleItem = React.createClass({
   },
 
   handleDragEnd (event) {
-    setTimeout(() => {
-      this.setState({
-        dragging: false
-      })
-    }, 20)
+    this.setState({
+      dragging: false
+    })
   },
 
   handlePublishChange () {
