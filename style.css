@@ -30,6 +30,8 @@
   height: 18px;
   display: inline-block;
   padding: 10px 12px;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .ReactSortableItemGroups__draghandle-svg {
@@ -90,8 +92,6 @@
 .ReactSortableItemGroups__item {
   display: -webkit-flex;
   display: flex;
-  cursor: -webkit-grab;
-  cursor: grab;
   background-color: white;
   margin: 0;
   list-style: none;
