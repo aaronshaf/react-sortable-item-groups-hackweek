@@ -19,6 +19,7 @@ app.get('/api/v1/courses/:course_id/modules', (req, res) => {
     return {
       id: moduleId,
       href: moduleHref,
+      type: 'module',
       title: loremHipsum({count: random(3, 10), units: 'words'}),
       items: range(0, 5).map(() => {
         const dueDate = moment()
