@@ -371,7 +371,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(24)();
-	exports.push([module.id, ".ItemGroup {\n  border: 1px solid #D8D8D8;\n  border-top-left-radius: 10px;\n  border-top-right-radius: 10px;\n  margin-top: 12px;\n  margin-bottom: 12px;\n  overflow: hidden;\n}\n\n.ItemGroup-list {\n  padding: 0;\n  margin: 0;\n  list-style: none;\n}\n\n.ItemGroup-header {\n  background-color: #F7F7F7;\n  text-transform: capitalize; /* temporary */\n  display: -webkit-flex;\n  display: flex;\n  -webkit-align-items: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n}\n\n.ItemGroup-draghandle {\n  width: 9px;\n  height: 18px;\n  display: inline-block;\n  padding: 10px 12px;\n}\n\n\n.ItemGroup-draghandle-svg {\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.ItemGroup__expand-button {\n  -webkit-box-sizing: content-box;\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  border: 0;\n  background-color: transparent;\n  margin: 0;\n  padding: 0;\n  height: 42px;\n}\n\n.ItemGroup__expand-button:focus {\n  -moz-outline: none;\n  outline: none;\n}\n\n.ItemGroup__expand-arrow {\n  display: inline-block;\n  border: 0;\n  padding: 12px;\n  width: 10px;\n  height 10px;\n}\n\n.ItemGroup--expanded .ItemGroup__expand-arrow {\n  -webkit-transition: all 0.15s;\n  transition: all 0.15s;\n}\n\n.ItemGroup--collapsed .ItemGroup__expand-arrow {\n  -webkit-transform: rotate(-90deg);\n  transform: rotate(-90deg);\n  -webkit-transition: all 0.15s;\n  transition: all 0.15s;\n}\n\n.ItemGroup-title {\n  display: inline-block;\n  font-size: 1.03rem;\n  margin-top: 8px;\n  margin-bottom: 8px;\n  -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -ms-flex: 1; -webkit-flex: 1; flex: 1;\n}\n\n.ItemGroup-itemlist {\n  padding: 0;\n  margin: 0;\n  list-style: none;\n}\n\n/* temporarily using cascade here until cloneElement better implemented */\n.ItemGroup-itemlist > li,\n.ItemGroup-item {\n  display: -webkit-flex;\n  display: flex;\n  cursor: -webkit-grab;\n  cursor: grab;\n  background-color: white;\n  margin: 0;\n  list-style: none;\n  border-top: 1px solid #D8D8D8;\n  border-bottom: 1px solid #D8D8D8;\n  margin-bottom: -1px;\n  text-transform: capitalize; /* temporary; for example only */\n}\n\n.ItemGroup-itemlist > li:active {\n  cursor: grabbing;\n}\n\n.ItemGroup-itemlist > li.hover.hover-above {\n  border-top: 1px solid black;\n}\n\n.ItemGroup-itemlist > li.hover.hover-below {\n  border-bottom: 1px solid black;\n}\n\n.ItemGroup-itemlist > li.hover.hover-below + li {\n  border-top: 1px solid black;\n}\n\n.ItemGroup-item-content {\n  -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -ms-flex: 1; -webkit-flex: 1; flex: 1;\n  display: -webkit-flex;\n  display: flex;\n}\n", ""]);
+	exports.push([module.id, ".ItemGroup {\n  border: 1px solid #D8D8D8;\n  border-top-left-radius: 10px;\n  border-top-right-radius: 10px;\n  border-bottom: 0;\n  margin-top: 12px;\n  margin-bottom: 12px;\n  overflow: hidden;\n}\n\n.ItemGroup-list {\n  padding: 0;\n  margin: 0;\n  list-style: none;\n}\n\n.ItemGroup-header {\n  background-color: #F7F7F7;\n  text-transform: capitalize; /* temporary */\n  display: -webkit-flex;\n  display: flex;\n  -webkit-align-items: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n}\n\n.ItemGroup-draghandle {\n  width: 9px;\n  height: 18px;\n  display: inline-block;\n  padding: 10px 12px;\n}\n\n.ItemGroup-draghandle-svg {\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.ItemGroup__expand-button {\n  -webkit-box-sizing: content-box;\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  border: 0;\n  background-color: transparent;\n  margin: 0;\n  padding: 0;\n  height: 42px;\n}\n\n.ItemGroup__expand-button:focus {\n  -moz-outline: none;\n  outline: none;\n}\n\n.ItemGroup__expand-arrow {\n  display: inline-block;\n  border: 0;\n  padding: 12px;\n  width: 10px;\n  height 10px;\n}\n\n.ItemGroup--expanded .ItemGroup__expand-arrow {\n  -webkit-transition: all 0.15s;\n  transition: all 0.15s;\n}\n\n.ItemGroup--collapsed .ItemGroup__expand-arrow {\n  -webkit-transform: rotate(-90deg);\n  transform: rotate(-90deg);\n  -webkit-transition: all 0.15s;\n  transition: all 0.15s;\n}\n\n.ItemGroup-title {\n  display: inline-block;\n  font-size: 1.03rem;\n  margin-top: 8px;\n  margin-bottom: 8px;\n  -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -ms-flex: 1; -webkit-flex: 1; flex: 1;\n}\n\n.ItemGroup-itemlist {\n  padding: 0;\n  margin: 0;\n  list-style: none;\n}\n\n.ItemGroup-item {\n  display: -webkit-flex;\n  display: flex;\n  cursor: -webkit-grab;\n  cursor: grab;\n  background-color: white;\n  margin: 0;\n  list-style: none;\n  border-top: 1px solid #D8D8D8;\n  border-bottom: 1px solid #D8D8D8;\n  margin-bottom: -1px;\n  text-transform: capitalize; /* temporary; for example only */\n}\n\n.ItemGroup-item:last-of-type {\n  margin-bottom: 0;\n}\n\n.ItemGroup-item:active {\n  cursor: grabbing;\n}\n\n.ItemGroup-item.hover.hover-above {\n  border-top: 1px solid black;\n}\n\n.ItemGroup-item.hover.hover-below {\n  border-bottom: 1px solid black;\n}\n\n.ItemGroup-item.hover.hover-below + .ItemGroup-item {\n  border-top: 1px solid black;\n}\n\n.ItemGroup-item-content {\n  -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; -ms-flex: 1; -webkit-flex: 1; flex: 1;\n  display: -webkit-flex;\n  display: flex;\n}\n", ""]);
 
 /***/ },
 /* 10 */
@@ -11322,7 +11322,9 @@
 
 	var _DragHandle2 = _interopRequireWildcard(_DragHandle);
 
-	// import classSet from 'class-set'
+	var _classSet = __webpack_require__(235);
+
+	var _classSet2 = _interopRequireWildcard(_classSet);
 
 	var ItemGroupItem = _React2['default'].createClass({
 	  propTypes: {
@@ -11332,10 +11334,12 @@
 	  displayName: 'ItemGroupItem',
 
 	  render: function render() {
+	    var classes = _classSet2['default'](this.props.className, 'ItemGroup-item');
+
 	    return _React2['default'].createElement(
 	      _SortableItem2['default'],
 	      {
-	        className: this.props.className,
+	        className: classes,
 	        type: this.props.type,
 	        data: this.props.data,
 	        handleDrop: this.props.handleDrop,
