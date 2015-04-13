@@ -48,7 +48,7 @@ var ItemGroupItem = _React2['default'].createClass({
         _React2['default'].createElement(_DragHandle2['default'], null),
         _React2['default'].createElement(
           'div',
-          { className: 'ItemGroup-item-content' },
+          { className: 'ReactSortableItemGroups__item-content' },
           this.props.children
         )
       )

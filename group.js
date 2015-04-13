@@ -33,7 +33,7 @@ var ItemGroup = _React2['default'].createClass({
 
   render: function render() {
     var hasExpandedChildren = this.props.children && this.state.expanded;
-    var classes = _classSet2['default']('ItemGroup', {
+    var classes = _classSet2['default']('ReactSortableItemGroups__group', {
       'ItemGroup--expanded': this.state.expanded,
       'ItemGroup--collapsed': !this.state.expanded
     });
@@ -43,19 +43,19 @@ var ItemGroup = _React2['default'].createClass({
       { className: classes },
       _React2['default'].createElement(
         'div',
-        { className: 'ItemGroup-header' },
+        { className: 'ReactSortableItemGroups__group-header' },
         _React2['default'].createElement(
           'button',
-          { className: 'ItemGroup__expand-button', onClick: this.handleExpandToggle },
+          { className: 'ReactSortableItemGroups__expand-button', onClick: this.handleExpandToggle },
           _React2['default'].createElement(
             'span',
-            { className: 'ItemGroup__expand-arrow' },
+            { className: 'ReactSortableItemGroups__expand-arrow' },
             _React2['default'].createElement(_ArrowDown2['default'], null)
           )
         ),
         _React2['default'].createElement(
           'div',
-          { className: 'ItemGroup-title' },
+          { className: 'ReactSortableItemGroups__group-title' },
           this.props.title || 'Empty'
         )
       ),

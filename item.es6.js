@@ -24,7 +24,7 @@ const ItemGroupItem = React.createClass({
           handleAcceptTest={this.props.handleAcceptTest}>
         <li className="ItemGroup-item">
           <DragHandle />
-          <div className="ItemGroup-item-content">
+          <div className="ReactSortableItemGroups__item-content">
             {this.props.children}
           </div>
         </li>

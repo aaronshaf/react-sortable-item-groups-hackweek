@@ -25,12 +25,12 @@ const ItemGroup = React.createClass({
     return (
       <li className={classes}>
         <div className="ReactSortableItemGroups__group-header">
-          <button className="ItemGroup__expand-button" onClick={this.handleExpandToggle}>
-            <span className="ItemGroup__expand-arrow">
+          <button className="ReactSortableItemGroups__expand-button" onClick={this.handleExpandToggle}>
+            <span className="ReactSortableItemGroups__expand-arrow">
               <ArrowDown />
             </span>
           </button>
-          <div className="ItemGroup-title">{this.props.title || 'Empty'}</div>
+          <div className="ReactSortableItemGroups__group-title">{this.props.title || 'Empty'}</div>
         </div>
         <ol className="ItemGroup-itemlist">
           {hasExpandedChildren && this.props.children}
