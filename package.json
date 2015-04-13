@@ -1,6 +1,6 @@
 {
   "name": "react-sortable-item-groups",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Sortable item groups using browser's native drag and drop API. Alpha. Not ready for production.",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,6 @@
     "babel": "^5.0.8",
     "babel-core": "^5.0.8",
     "babel-loader": "^5.0.0",
-    "class-set": "0.0.4",
     "css-loader": "^0.10.1",
     "expect": "^1.6.0",
     "karma": "^0.12.31",
@@ -35,14 +34,17 @@
     "lorem-hipsum": "^0.1.6",
     "mocha": "^2.2.1",
     "moment": "^2.10.2",
-    "react": "^0.13.1",
     "react-publish-toggle": "0.0.6",
-    "react-sortable-item": "^1.1.1",
     "style-loader": "^0.10.1",
     "uniflow": "^1.0.1",
     "uniflow-component": "^1.0.0",
     "webpack": "^1.7.3",
     "webpack-dev-server": "^1.8.0",
     "xhr-interceptor": "^1.2.1"
+  },
+  "dependencies": {
+    "class-set": "0.0.4",
+    "react-sortable-item": "^1.1.1",
+    "react": "^0.13.1"
   }
 }

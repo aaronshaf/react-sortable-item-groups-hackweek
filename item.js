@@ -18,7 +18,9 @@ var _DragHandle = require('./drag-handle.es6');
 
 var _DragHandle2 = _interopRequireWildcard(_DragHandle);
 
-// import classSet from 'class-set'
+var _classSet = require('class-set');
+
+var _classSet2 = _interopRequireWildcard(_classSet);
 
 var ItemGroupItem = _React2['default'].createClass({
   propTypes: {
@@ -28,10 +30,12 @@ var ItemGroupItem = _React2['default'].createClass({
   displayName: 'ItemGroupItem',
 
   render: function render() {
+    var classes = _classSet2['default'](this.props.className, 'ItemGroup-item');
+
     return _React2['default'].createElement(
       _SortableItem2['default'],
       {
-        className: this.props.className,
+        className: classes,
         type: this.props.type,
         data: this.props.data,
         handleDrop: this.props.handleDrop,

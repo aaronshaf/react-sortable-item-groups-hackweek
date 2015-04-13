@@ -2,6 +2,7 @@
   border: 1px solid #D8D8D8;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-bottom: 0;
   margin-top: 12px;
   margin-bottom: 12px;
   overflow: hidden;
@@ -30,7 +31,6 @@
   display: inline-block;
   padding: 10px 12px;
 }
-
 
 .ItemGroup-draghandle-svg {
   max-width: 100%;
@@ -87,8 +87,6 @@
   list-style: none;
 }
 
-/* temporarily using cascade here until cloneElement better implemented */
-.ItemGroup-itemlist > li,
 .ItemGroup-item {
   display: -webkit-flex;
   display: flex;
@@ -103,19 +101,23 @@
   text-transform: capitalize; /* temporary; for example only */
 }
 
-.ItemGroup-itemlist > li:active {
+.ItemGroup-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.ItemGroup-item:active {
   cursor: grabbing;
 }
 
-.ItemGroup-itemlist > li.hover.hover-above {
+.ItemGroup-item.hover.hover-above {
   border-top: 1px solid black;
 }
 
-.ItemGroup-itemlist > li.hover.hover-below {
+.ItemGroup-item.hover.hover-below {
   border-bottom: 1px solid black;
 }
 
-.ItemGroup-itemlist > li.hover.hover-below + li {
+.ItemGroup-item.hover.hover-below + .ItemGroup-item {
   border-top: 1px solid black;
 }
 
