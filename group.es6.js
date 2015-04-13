@@ -18,8 +18,8 @@ const ItemGroup = React.createClass({
   render() {
     const hasExpandedChildren = this.props.children && this.state.expanded
     const classes = classSet('ReactSortableItemGroups__group', {
-      'ItemGroup--expanded': this.state.expanded,
-      'ItemGroup--collapsed': !this.state.expanded
+      'ReactSortableItemGroups__group--expanded': this.state.expanded,
+      'ReactSortableItemGroups__group--collapsed': !this.state.expanded
     })
 
     return (
@@ -32,7 +32,7 @@ const ItemGroup = React.createClass({
           </button>
           <div className="ReactSortableItemGroups__group-title">{this.props.title || 'Empty'}</div>
         </div>
-        <ol className="ItemGroup-itemlist">
+        <ol className="ReactSortableItemGroups__itemlist">
           {hasExpandedChildren && this.props.children}
         </ol>
       </li>

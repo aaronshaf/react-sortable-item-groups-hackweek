@@ -11,7 +11,7 @@ const ItemGroupItem = React.createClass({
   displayName: 'ItemGroupItem',
 
   render() {
-    const classes = classSet(this.props.className, 'ItemGroup-item')
+    const classes = classSet(this.props.className, 'ReactSortableItemGroups__item')
 
     return (
       <SortableItem
@@ -22,7 +22,7 @@ const ItemGroupItem = React.createClass({
           handleDragStart={this.props.handleDragStart}
           handleDragEnd={this.props.handleDragEnd}
           handleAcceptTest={this.props.handleAcceptTest}>
-        <li className="ItemGroup-item">
+        <li>
           <DragHandle />
           <div className="ReactSortableItemGroups__item-content">
             {this.props.children}

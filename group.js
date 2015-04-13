@@ -34,8 +34,8 @@ var ItemGroup = _React2['default'].createClass({
   render: function render() {
     var hasExpandedChildren = this.props.children && this.state.expanded;
     var classes = _classSet2['default']('ReactSortableItemGroups__group', {
-      'ItemGroup--expanded': this.state.expanded,
-      'ItemGroup--collapsed': !this.state.expanded
+      'ReactSortableItemGroups__group--expanded': this.state.expanded,
+      'ReactSortableItemGroups__group--collapsed': !this.state.expanded
     });
 
     return _React2['default'].createElement(
@@ -61,7 +61,7 @@ var ItemGroup = _React2['default'].createClass({
       ),
       _React2['default'].createElement(
         'ol',
-        { className: 'ItemGroup-itemlist' },
+        { className: 'ReactSortableItemGroups__itemlist' },
         hasExpandedChildren && this.props.children
       )
     );

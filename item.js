@@ -30,7 +30,7 @@ var ItemGroupItem = _React2['default'].createClass({
   displayName: 'ItemGroupItem',
 
   render: function render() {
-    var classes = _classSet2['default'](this.props.className, 'ItemGroup-item');
+    var classes = _classSet2['default'](this.props.className, 'ReactSortableItemGroups__item');
 
     return _React2['default'].createElement(
       _SortableItem2['default'],
@@ -44,7 +44,7 @@ var ItemGroupItem = _React2['default'].createClass({
         handleAcceptTest: this.props.handleAcceptTest },
       _React2['default'].createElement(
         'li',
-        { className: 'ItemGroup-item' },
+        null,
         _React2['default'].createElement(_DragHandle2['default'], null),
         _React2['default'].createElement(
           'div',
