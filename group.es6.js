@@ -1,4 +1,5 @@
 import React from 'react'
+import DragHandle from './drag-handle.es6'
 import ArrowDown from './arrow-down.es6'
 import classSet from 'class-set'
 
@@ -25,6 +26,7 @@ const ItemGroup = React.createClass({
     return (
       <li className={classes}>
         <div className="ReactSortableItemGroups__group-header">
+          {/* <DragHandle ref="handle" /> */}
           <button className="ReactSortableItemGroups__expand-button" onClick={this.handleExpandToggle}>
             <span className="ReactSortableItemGroups__expand-arrow">
               <ArrowDown />

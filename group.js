@@ -10,6 +10,10 @@ var _React = require('react');
 
 var _React2 = _interopRequireWildcard(_React);
 
+var _DragHandle = require('./drag-handle.es6');
+
+var _DragHandle2 = _interopRequireWildcard(_DragHandle);
+
 var _ArrowDown = require('./arrow-down.es6');
 
 var _ArrowDown2 = _interopRequireWildcard(_ArrowDown);
@@ -70,3 +74,4 @@ var ItemGroup = _React2['default'].createClass({
 
 exports['default'] = ItemGroup;
 module.exports = exports['default'];
+/* <DragHandle ref="handle" /> */
