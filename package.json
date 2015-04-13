@@ -4,7 +4,7 @@
   "description": "Sortable item groups using browser's native drag and drop API. Alpha. Not ready for production.",
   "main": "index.js",
   "scripts": {
-    "build": "babel group.es6.js --out-file group.js && babel item.es6.js --out-file item.js",
+    "build": "babel group.es6.js --out-file group.js && babel item.es6.js --out-file item.js && webpack --optimize-minimize",
     "dev": "webpack --watch"
   },
   "repository": {
