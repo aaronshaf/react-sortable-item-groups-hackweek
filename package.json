@@ -1,6 +1,6 @@
 {
   "name": "react-sortable-item-groups",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sortable item groups using browser's native drag and drop API. Alpha. Not ready for production.",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "karma-sourcemap-loader": "^0.3.4",
     "karma-webpack": "^1.5.0",
     "lodash-node": "^3.6.0",
-    "lorem-hipsum": "^0.1.6",
+    "lorem-hipsum": "^0.1.7",
     "mocha": "^2.2.1",
     "moment": "^2.10.2",
     "react-publish-toggle": "0.0.6",
